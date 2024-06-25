@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Lists Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            background-color: #ddd;
+        }
+        main{
+            margin: 40px;
+        }
+        section {
+            margin-bottom: 30px;
+        }
+        h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        .styled-list {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+        .styled-list li {
+            margin-bottom: 5px;
+        }
+          .ordered-list {
+            counter-reset: item;
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        .ordered-list li {
+            counter-increment: item;
+            margin-bottom: 5px;
+        }
+        .ordered-list li::before {
+            content: counter(item) ".";
+            margin-right: 5px;
+        }
+        .ordered-list-type-a {
+            list-style-type: lower-alpha;
+        }
+        .ordered-list-type-I {
+            list-style-type: upper-roman;
+        }
+        .ordered-list-type-i {
+            list-style-type: lower-roman;
+        }
+        .definition-list {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 10px;
+        }
+        .definition-list dt {
+            font-weight: bold;
+        }
+        .description {
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HTML Lists Examples</h1>
+        <p>Explore various list elements</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="forms.html">Forms</a></li>
+            <li><a href="media.html">Media</a></li>
+            <li><a href="tables.html">Tables</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="unordered-list">
+            <h2>Unordered List</h2>
+            <p>A basic unordered list</p>
+            <ul class="styled-list">
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+            </ul>
+        </section>
+
+        <section id="ordered-list-type-1">
+            <h2>Ordered List (Default)</h2>
+            <p>A basic ordered list with default numbering.</p>
+            <ol class="ordered-list">
+                <li>First item</li>
+                <li>Second item</li>
+                <li>Third item</li>
+            </ol>
+        </section>
+
+        <section id="ordered-list-type-a">
+            <h2>Ordered List (Lowercase Alphabetical)</h2>
+            <p>An ordered list using lowercase alphabetical numbering.</p>
+            <ol class="ordered-list ordered-list-type-a">
+                <li>Item A</li>
+                <li>Item B</li>
+                <li>Item C</li>
+            </ol>
+        </section>
+
+        <section id="ordered-list-type-I">
+            <h2>Ordered List (Uppercase Roman Numerals)</h2>
+            <p>An ordered list using uppercase Roman numeral numbering.</p>
+            <ol class="ordered-list ordered-list-type-I">
+                <li>Item I</li>
+                <li>Item II</li>
+                <li>Item III</li>
+            </ol>
+        </section>
+
+        <section id="ordered-list-type-i">
+            <h2>Ordered List (Lowercase Roman Numerals)</h2>
+            <p>An ordered list using lowercase Roman numeral numbering.</p>
+            <ol class="ordered-list ordered-list-type-i">
+                <li>Item i</li>
+                <li>Item ii</li>
+                <li>Item iii</li>
+            </ol>
+
+        <section id="definition-list">
+            <h2>Definition List</h2>
+            <p>A definition list</p>
+            <dl class="definition-list">
+                <dt>Term 1</dt>
+                <dd>Description for Term 1</dd>
+                <dt>Term 2</dt>
+                <dd>Description for Term 2</dd>
+                <dt>Term 3</dt>
+                <dd>Description for Term 3</dd>
+            </dl>
+        </section>
+
+        <section id="description-list">
+            <h2>Description List</h2>
+            <p>A description list with descriptions.</p>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets</dd>
+                <dt>JS</dt>
+                <dd>JavaScript</dd>
+            </dl>
+        </section>
+
+        <section id="nested-list">
+            <h2>Nested Lists</h2>
+            <p>Example of nested lists</p>
+            <ul class="styled-list">
+                <li>Item 1
+                    <ul>
+                        <li>Sub-item 1</li>
+                        <li>Sub-item 2</li>
+                    </ul>
+                </li>
+                <li>Item 2</li>
+                <li>Item 3
+                    <ol class="ordered-list">
+                        <li>Sub-item A</li>
+                        <li>Sub-item B</li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Back to Home</a></p>
+    </footer>
+
+</body>
+</html>

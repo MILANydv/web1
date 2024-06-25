@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Media Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        nav {
+            background-color: #f2f2f2;
+            padding: 10px 0;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #333;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        nav ul li a:hover {
+            background-color: #ddd;
+        }
+        section {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        h2 {
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+        figure {
+            margin: 0;
+            padding: 0;
+        }
+        figcaption {
+            font-style: italic;
+            color: #666;
+            margin-top: 5px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            margin: 10px;
+            max-width: 300px;
+            border-radius: 5px;
+        }
+        .gallery figcaption {
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>HTML Media Examples</h1>
+        <p>Explore various media elements</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="forms.html">Forms</a></li>
+            <li><a href="tables.html">Tables</a></li>
+            <li><a href="lists.html">Lists</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="image">
+            <h2>Image</h2>
+            <img src="https://via.placeholder.com/300" alt="Placeholder Image">
+        </section>
+
+        <section id="audio">
+            <h2>Audio</h2>
+            <audio controls>
+                <source src="sample_audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+        </section>
+
+        <section id="video">
+            <h2>Video</h2>
+            <video controls width="400">
+                <source src="sample_video.mp4" type="video/mp4">
+                Your browser does not support the video element.
+            </video>
+        </section>
+
+        <section id="gallery">
+            <h2>Image Gallery</h2>
+            <div class="gallery">
+                <figure>
+                    <img src="https://via.placeholder.com/300" alt="Image 1">
+                    <figcaption>Image 1</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300" alt="Image 2">
+                    <figcaption>Image 2</figcaption>
+                </figure>
+                <figure>
+                    <img src="https://via.placeholder.com/300" alt="Image 3">
+                    <figcaption>Image 3</figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section id="youtube">
+            <h2>Embedded YouTube Video</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Back to Home</a></p>
+    </footer>
+
+</body>
+</html>
