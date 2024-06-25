@@ -1,6 +1,6 @@
 # Website Name
 
-A collection of examples showcasing HTML elements: forms, media, tables, lists.
+A collection of examples showcasing HTML elements: forms, media, tables, lists, fonts.
 
 ## Table of Contents
 
@@ -10,11 +10,10 @@ A collection of examples showcasing HTML elements: forms, media, tables, lists.
 - [Features](#features)
 - [Usage](#usage)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 
-This repository contains examples of HTML elements such as forms, media (images, audio, video), tables, and lists. Each example demonstrates different variations and uses of these elements.
+This repository contains examples of HTML elements such as forms, media (images, audio, video), tables, fonts and lists. Each example demonstrates different variations and uses of these elements.
 
 ## Technologies Used
 
@@ -35,10 +34,11 @@ To run or view the examples locally, follow these steps:
 - **Media:** Examples of image, audio, and video elements with controls and sources.
 - **Tables:** Various table structures with headers, data rows, captions, and styling.
 - **Lists:** Different types of lists such as unordered lists, ordered lists with different numbering styles, and definition lists.
+- **Fonts and Typography:** Displays different font styles and typographic elements using HTML tags.
 
 ## Usage
 
-Explore each HTML file (`forms.html`, `media.html`, `tables.html`, `lists.html`) to see the examples of different HTML elements and their variations.
+Explore each HTML file (`forms.html`, `media.html`, `tables.html`, `lists.html`, `fonts.html`) to see the examples of different HTML elements and their variations.
 
 ## Contributing
 

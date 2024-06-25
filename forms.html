@@ -1,182 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Forms Examples</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 200;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
-        nav {
-            background-color: #f2f2f2;
-            padding: 10px 0;
-        }
-        nav ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-        nav ul li a {
-            color: #333;
-            text-decoration: none;
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
-        nav ul li a:hover {
-            background-color: #ddd;
-        }
-        main{
-            margin:40px;
-        }
-        section {
-            margin-bottom: 20px;
-        }
-        section h2 {
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 5px;
-        }
-        form {
-            margin-bottom: 20px;
-        }
-        label {
-            display: block;
-            margin-bottom: 5px;
-        }
-        input[type="text"], input[type="email"], textarea, select {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            box-sizing: border-box;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        input[type="checkbox"], input[type="radio"] {
-            margin-right: 5px;
-        }
-        input[type="submit"] {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #45a049;
-        }
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 200;
+      }
+      header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+      }
+      nav {
+        background-color: #f2f2f2;
+        padding: 10px 0;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 10px;
+      }
+      nav ul li a {
+        color: #333;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      nav ul li a:hover {
+        background-color: #ddd;
+      }
+      main {
+        margin: 40px;
+      }
+      section {
+        margin-bottom: 20px;
+      }
+      section h2 {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+      }
+      form {
+        margin-bottom: 20px;
+      }
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      input[type="text"],
+      input[type="email"],
+      textarea,
+      select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+      input[type="checkbox"],
+      input[type="radio"] {
+        margin-right: 5px;
+      }
+      input[type="submit"] {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #45a049;
+      }
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <h1>HTML Forms Examples</h1>
-        <p>Explore various form elements</p>
+      <h1>HTML Forms Examples</h1>
+      <p>Explore various form elements</p>
     </header>
 
     <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="media.html">Media</a></li>
-            <li><a href="tables.html">Tables</a></li>
-            <li><a href="lists.html">Lists</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="media.html">Media</a></li>
+        <li><a href="tables.html">Tables</a></li>
+        <li><a href="lists.html">Lists</a></li>
+        <li><a href="fonts.html">Fonts</a></li>
+      </ul>
     </nav>
 
     <main>
-        <section id="basic-form">
-            <h2>Basic Form</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required><br><br>
-                <input type="submit" value="Submit">
-            </form>
-        </section>
+      <section id="basic-form">
+        <h2>Basic Form</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
 
-        <section id="checkboxes-radios">
-            <h2>Checkboxes and Radios</h2>
-            <form>
-                <input type="checkbox" id="check1" name="check1" value="check1">
-                <label for="check1">Option 1</label><br>
-                <input type="checkbox" id="check2" name="check2" value="check2">
-                <label for="check2">Option 2</label><br><br>
+      <section id="checkboxes-radios">
+        <h2>Checkboxes and Radios</h2>
+        <form>
+          <input type="checkbox" id="check1" name="check1" value="check1" />
+          <label for="check1">Option 1</label><br />
+          <input type="checkbox" id="check2" name="check2" value="check2" />
+          <label for="check2">Option 2</label><br /><br />
 
-                <input type="radio" id="radio1" name="radio" value="radio1">
-                <label for="radio1">Radio 1</label><br>
-                <input type="radio" id="radio2" name="radio" value="radio2">
-                <label for="radio2">Radio 2</label><br><br>
+          <input type="radio" id="radio1" name="radio" value="radio1" />
+          <label for="radio1">Radio 1</label><br />
+          <input type="radio" id="radio2" name="radio" value="radio2" />
+          <label for="radio2">Radio 2</label><br /><br />
 
-                <input type="submit" value="Submit">
-            </form>
-        </section>
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
 
-        <section id="select-options">
-            <h2>Select Options and Textarea</h2>
-            <form>
-                <label for="cars">Choose a car:</label>
-                <select id="cars" name="cars">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
-                </select><br><br>
+      <section id="select-options">
+        <h2>Select Options and Textarea</h2>
+        <form>
+          <label for="cars">Choose a car:</label>
+          <select id="cars" name="cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option></select
+          ><br /><br />
 
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+          <label for="message">Message:</label><br />
+          <textarea id="message" name="message" rows="4" cols="50"></textarea
+          ><br /><br />
 
-                <input type="submit" value="Submit">
-            </form>
-        </section>
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
 
-        <section id="file-upload">
-            <h2>File Upload</h2>
-            <form>
-                <label for="file">Choose a file:</label>
-                <input type="file" id="file" name="file"><br><br>
+      <section id="file-upload">
+        <h2>File Upload</h2>
+        <form>
+          <label for="file">Choose a file:</label>
+          <input type="file" id="file" name="file" /><br /><br />
 
-                <input type="submit" value="Upload">
-            </form>
-        </section>
+          <input type="submit" value="Upload" />
+        </form>
+      </section>
 
-        <section id="multiple-inputs">
-            <h2>Multiple Inputs</h2>
-            <form>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username"><br><br>
+      <section id="multiple-inputs">
+        <h2>Multiple Inputs</h2>
+        <form>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" /><br /><br />
 
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password"><br><br>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" /><br /><br />
 
-                <label for="birthdate">Birthdate:</label>
-                <input type="date" id="birthdate" name="birthdate"><br><br>
+          <label for="birthdate">Birthdate:</label>
+          <input type="date" id="birthdate" name="birthdate" /><br /><br />
 
-                <label for="color">Favorite Color:</label>
-                <input type="color" id="color" name="color"><br><br>
+          <label for="color">Favorite Color:</label>
+          <input type="color" id="color" name="color" /><br /><br />
 
-                <input type="submit" value="Submit">
-            </form>
-        </section>
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
     </main>
 
     <footer>
-        <p><a href="index.html">Back to Home</a></p>
+      <p><a href="index.html">Back to Home</a></p>
     </footer>
-
-</body>
+  </body>
 </html>
