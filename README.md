@@ -1,4 +1,4 @@
-# Website Name
+# Basics of HTML
 
 A collection of examples showcasing HTML elements: forms, media, tables, lists, fonts.
 
