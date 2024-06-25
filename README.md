@@ -25,7 +25,7 @@ This repository contains examples of HTML elements such as forms, media (images,
 
 To run or view the examples locally, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/your-repository.git`
+1. Clone the repository: `git clone https://github.com/MILANydv/web1.git`
 2. Navigate into the project directory: `cd your-repository`
 3. Open `index.html` in a web browser.
 

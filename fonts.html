@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Elements Examples</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 20px;
+      }
+      header,
+      nav {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+      }
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 10px;
+      }
+      nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 5px;
+      }
+      nav ul li a:hover {
+        background-color: #ddd;
+        color: #333;
+      }
+      section {
+        margin-bottom: 30px;
+      }
+      h2 {
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+      }
+      .element-example {
+        margin-bottom: 20px;
+      }
+      .element-description {
+        margin-bottom: 10px;
+      }
+      .output {
+        border: 1px solid #ccc;
+        padding: 10px;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>HTML Elements Examples</h1>
+      <p>Demonstrating various HTML elements and their usage</p>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#headings">Headings</a></li>
+        <li><a href="#paragraphs">Paragraphs</a></li>
+        <li><a href="#comments">Comments</a></li>
+        <li><a href="#text-formatting">Text Formatting</a></li>
+        <li><a href="#quotations-citations">Quotations & Citations</a></li>
+        <li><a href="#links">Links</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="headings">
+        <h2>HTML Headings</h2>
+        <div class="element-example">
+          <div class="element-description">
+            <p>
+              HTML headings are titles or subtitles that you want to display on
+              a webpage.
+            </p>
+          </div>
+          <div class="output">
+            <h1>Heading 1</h1>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+          </div>
+        </div>
+      </section>
+
+      <section id="paragraphs">
+        <h2>HTML Paragraphs</h2>
+        <div class="element-example">
+          <div class="element-description">
+            <p>The HTML <code>&lt;p&gt;</code> element defines a paragraph.</p>
+            <p>
+              A paragraph always starts on a new line, and browsers
+              automatically add some white space (a margin) before and after a
+              paragraph.
+            </p>
+            <p>
+              If we need to display the content in the same format we type, we
+              need to use <code>&lt;pre&gt;</code> tag.
+            </p>
+          </div>
+          <div class="output">
+            <p>
+              This is a paragraph. This is a paragraph. This is a paragraph.
+            </p>
+            <pre>
+This is a preformatted text.
+It preserves whitespace, line breaks,
+and formatting.
+                    </pre
+            >
+          </div>
+        </div>
+      </section>
+
+      <section id="comments">
+        <h2>HTML Comments</h2>
+        <div class="element-example">
+          <div class="element-description">
+            <p>
+              Comments are ignored by the web browser when rendering HTML pages.
+              They are written to give instructions for the code or to specify
+              what the code does.
+            </p>
+          </div>
+          <div class="output">
+            <!-- This is an HTML comment -->
+            <p>This text is visible.</p>
+            <!--
+                    <p>This text is commented out and not visible.</p>
+                    -->
+          </div>
+        </div>
+      </section>
+
+      <section id="text-formatting">
+        <h2>HTML Text Formatting</h2>
+        <div class="element-example">
+          <div class="element-description">
+            <p>HTML provides tags to format text in different ways.</p>
+          </div>
+          <div class="output">
+            <p><b>Bold text:</b> <b>This text is bold.</b></p>
+            <p>
+              <strong>Strong text:</strong>
+              <strong>This text is strong.</strong>
+            </p>
+            <p><i>Italic text:</i> <i>This text is italic.</i></p>
+            <p><em>Emphasized text:</em> <em>This text is emphasized.</em></p>
+            <p><mark>Marked text:</mark> <mark>This text is marked.</mark></p>
+            <p><small>Small text:</small> <small>This text is small.</small></p>
+            <p><del>Deleted text:</del> <del>This text is deleted.</del></p>
+            <p><ins>Inserted text:</ins> <ins>This text is inserted.</ins></p>
+            <p><sub>Subscript text:</sub> H<sub>2</sub>O</p>
+            <p><sup>Superscript text:</sup> E = mc<sup>2</sup></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="quotations-citations">
+        <h2>HTML Quotations and Citations</h2>
+        <div class="element-example">
+          <div class="element-description">
+            <p>HTML provides tags for handling quotations and citations.</p>
+          </div>
+          <div class="output">
+            <blockquote>
+              <p>
+                This is a blockquote. It defines a section that is quoted from
+                another source.
+              </p>
+            </blockquote>
+            <p><q>This is a short quotation.</q></p>
+            <p><abbr title="Hypertext Markup Language">HTML</abbr></p>
+            <p><cite>The title of a creative work.</cite></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="links">
+        <h2>HTML Links</h2>
+        <div class="element-example">
+          <div class="element-description">
+            <p>
+              HTML links, also known as hyperlinks, allow users to click their
+              way from page to page.
+            </p>
+          </div>
+          <div class="output">
+            <p>
+              Click this <a href="https://example.com">link</a> to visit
+              example.com.
+            </p>
+            <p>
+              Open
+              <a href="https://example.com" target="_blank">this link</a> in a
+              new tab.
+            </p>
+            <p>
+              Jump to <a href="#paragraphs">Paragraphs section</a> on this page.
+            </p>
+            <p>
+              Email me:
+              <a href="mailto:example@example.com">example@example.com</a>
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p><a href="index.html">Back to Home</a></p>
+
+      <p>&copy; 2024 Your Website Name. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
